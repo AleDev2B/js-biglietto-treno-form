@@ -1,0 +1,54 @@
+/* IMPOSTAZIONI GENERALI DEL SITO*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  background-color: lightblue;
+}
+
+.Box_alto,.Box_basso{
+  height: 33vh;
+  margin: 0 100px;
+}
+
+header{
+  margin: 0 100px;
+}
+
+[class*=Info_]{
+  width: 18%;
+  height: 25vh;
+  background: white;
+}
+
+/* IMPOSTAZIONI SPECIFICHE PER LE SINGOLE SEZIONI DEL SITO */
+/* sezione titolo pagina */
+h2,h6 {
+  text-align: center;
+  color: white;
+}
+/* sezione box alto passeggero con input da selezionare da parte dell'utente */
+[class*=box_]{
+  width: 18%;
+  background: white;
+}
+
+
+
+.Box_Passenger{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* sezione bottoni */
+
+
+/* sezione biglietto passeggero */
+
+.Sezione_Ticket{
+  display: flex;
+  justify-content: space-around;
+}

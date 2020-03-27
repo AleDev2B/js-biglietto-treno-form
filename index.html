@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trenitalia: Parti con Noi</title>
+  </head>
+  <body>
+
+<!-- Titolo Pagina -->
+    <header>
+      <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    </header>
+<!-- sezione con i 3 box dove inserire le info del passeggero -->
+    <section class="Box_alto">
+      <div class="Box_Passenger">
+        <div class="box_nome">
+          <h6>Nome Cognome</h6>
+          <input type="text" name="" value="">
+        </div>
+
+        <div class="box_Km">
+          <h6>Km da percorrere</h6>
+          <input type="text" name="" value="">
+        </div>
+
+        <div class="box_eta">
+          <h6>Fascia d'età</h6>
+          <input type="text" name="" value="">
+        </div>
+      </div>
+
+<!-- sezione pulsanti per generare biglietto e annullare l'operazione in corso-->
+      <button id="ButtonGen" type="button" name="button"></button>
+      <button id="ButtonNull" type="button" name="button"></button>
+    </section>
+
+<!-- sezione con le info del biglietto scelto in base alle info immesse dal passeggero nella sezione alta -->
+    <section class="Box_basso">
+      <h2>IL TUO BIGLIETTO</h2>
+      <div class="Box_ticket">
+        <h4>DETTAGLIO PASSEGGERI</h4>
+        </div>
+        <div class="Sezione_Ticket">
+          <div class="Info_Passenger">
+            NOME PASSEGGERO
+          </div>
+          <div class="Info_Offer">
+            <h6>Offerta</h6>
+            <p></p>
+          </div>
+          <div class="Info_Carrozza">
+            <h6>Carrozza</h6>
+            <p class="IdCarrozza"></p>
+          </div>
+          <div class="Info_Code">
+            <h6>Codice CP</h6>
+            <p class="IdPrenotation"></p>
+          </div>
+          <div class="Info_Ticket">
+            <h6>Costo Biglietto</h6>
+            <p class="TicketPrice"></p>
+          </div>
+        </div>
+
+    </section>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
