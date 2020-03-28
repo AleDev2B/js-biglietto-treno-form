@@ -16,28 +16,42 @@
       <div class="Box_Passenger">
         <div class="box_nome">
           <h6>Nome Cognome</h6>
-          <input type="text" name="" value="">
+          <input class="InputName" type="text" name="" value="Frenzo">
         </div>
 
         <div class="box_Km">
           <h6>Km da percorrere</h6>
-          <input type="text" name="" value="">
+          <input class="InputKm" type="text" name="" value="0">
         </div>
 
         <div class="box_eta">
           <h6>Fascia d'età</h6>
-          <input type="text" name="" value="">
+          <select aria-label="AgeSelect" class="InputAge" name="">
+            <option value="">Carta Verde</option>
+            <option value="">Maggiorenne</option>
+            <option value="">CartaArgento</option>
+          </select>
         </div>
+
       </div>
 
-<!-- sezione pulsanti per generare biglietto e annullare l'operazione in corso-->
-      <button id="ButtonGen" type="button" name="button"></button>
-      <button id="ButtonNull" type="button" name="button"></button>
+      <!-- sezione pulsanti per generare biglietto e annullare l'operazione in corso-->
+      <div class="buttons">
+        <ul class="ButtonsList">
+          <li>
+            <button id="ButtonGen" type="submit" name="button">Genera</button>
+          </li>
+          <li>
+            <button id="ButtonNull" type="submit" name="button">Annulla</button>
+          </li>
+        </ul>
+      </div>
+
     </section>
 
-<!-- sezione con le info del biglietto scelto in base alle info immesse dal passeggero nella sezione alta -->
+<!-- sezione con le info del biglietto scelto in base alle info immesse dal passeggero nella sezione alta -->     <h2>IL TUO BIGLIETTO</h2>
     <section class="Box_basso">
-      <h2>IL TUO BIGLIETTO</h2>
+
       <div class="Box_ticket">
         <h4>DETTAGLIO PASSEGGERI</h4>
         </div>
