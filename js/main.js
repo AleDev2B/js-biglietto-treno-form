@@ -15,23 +15,24 @@ ButtonGen.addEventListener("click", function(){
   var FinalDest = parseInt(KmUser.value);
   console.log(FinalDest);
 
+
   var Eta = document.getElementById("InputTicketSel");
   var Age = Eta.value;
   console.log(Age);
 
+  var Offer = "Tariffa Standard"
   var KmAvPrice = 0.21;
-  var NormalTicket = KmAvPrice * FinalDest;
 
-  if (Age = "Carta Verde") {
-    (KmAvPrice * 0.80 * FinalDest);
+  if (Age == "Carta Verde") {
+
+    var NormalTicket = Math.round(KmAvPrice * FinalDest * 0.80);
     console.log(NormalTicket);
     Offer = "Tariffa: Viaggiatore Abituale"
-  } else if (Age = "Carta Argento") {
-    (NormalTicket * 0.60);
+  } else if (Age == "Carta Argento") {
+    var NormalTicket = Math.round(KmAvPrice * FinalDest * 0.60);
     Offer = "Tariffa: Over 65"
   } else {
-    (NormalTicket);
-    var Offer = "Tariffa Standard"
+    var NormalTicket = Math.round(KmAvPrice * FinalDest);
   }
 
   var Carrozza = Math.floor(Math.random() * 10);
@@ -45,12 +46,13 @@ ButtonGen.addEventListener("click", function(){
 
   document.getElementById("TicketType").innerHTML = Offer;
 
-  document.getElementById("TicketPrice").innerHTML = NormalTicket.toFixed(2);
+  document.getElementById("TicketPrice").innerHTML = NormalTicket;
 
   console.log(NormalTicket);
   var ShowBox = document.getElementById("Box_basso");
+  ShowBox.classList.add("show");
   ShowBox.classList.remove("hidden");
-  ShowBox.classList.add("show")
+
 }
 );
 
@@ -72,6 +74,6 @@ ButtonNull.addEventListener("click", function() {
   document.getElementById("InputTicketSel").value = "";
 
   var ShowBox = document.getElementById("Box_basso");
-  ShowBox.classList.remove("hidden");
-  ShowBox.classList.add("show")
+  ShowBox.classList.add("hidden");
+  ShowBox.classList.remove("show");
 } );
