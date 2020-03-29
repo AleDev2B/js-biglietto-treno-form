@@ -12,9 +12,9 @@ body{
   background: #CA004F;
 }
 
-.Box_alto,.Box_basso{
+.Box_alto,#Box_basso{
   height: 100%;
-  margin: 0 100px;
+  margin: 0 80px;
 
   background: white;
 }
@@ -39,6 +39,7 @@ h2 {
   text-align: center;
   color: white;
   font-weight: 600;
+  margin: 15px 0;
 }
 
 h6{
@@ -85,7 +86,7 @@ ul.ButtonsList{
   display: flex;
   justify-content: space-between;
 }
-[id*=Button]{
+[id*=button]{
   width: 56px;
   height: 30px;
   background: lightgrey;
@@ -100,4 +101,9 @@ ul.ButtonsList{
 .Sezione_Ticket{
   display: flex;
   justify-content: space-around;
+  height: 100px;
+}
+
+.Info_Passenger{
+  background: lightgrey;
 }

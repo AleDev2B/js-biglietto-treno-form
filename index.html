@@ -16,20 +16,20 @@
       <div class="Box_Passenger">
         <div class="box_nome">
           <h6>Nome Cognome</h6>
-          <input class="InputName" type="text" name="" value="Frenzo">
+          <input id="InputName"class="InputName" type="text" name="" value="">
         </div>
 
         <div class="box_Km">
           <h6>Km da percorrere</h6>
-          <input class="InputKm" type="text" name="" value="0">
+          <input id="InputKm" class="InputKm" type="text" name="" value="">
         </div>
 
         <div class="box_eta">
           <h6>Fascia d'età</h6>
-          <select aria-label="AgeSelect" class="InputAge" name="">
-            <option value="">Carta Verde</option>
-            <option value="">Maggiorenne</option>
-            <option value="">CartaArgento</option>
+          <select id="InputTicketSel" aria-label="AgeSelect" class="InputTicketSel" name="">
+            <option value="Carta Verde">Carta Verde</option>
+            <option value="Carta Argento">Carta Argento</option>
+            <option value="Intero">Intero</option>
           </select>
         </div>
 
@@ -39,10 +39,10 @@
       <div class="buttons">
         <ul class="ButtonsList">
           <li>
-            <button id="ButtonGen" type="submit" name="button">Genera</button>
+            <button id="buttongen" type="submit" name="button">Genera</button>
           </li>
           <li>
-            <button id="ButtonNull" type="submit" name="button">Annulla</button>
+            <button id="buttonnull" type="submit" name="button">Annulla</button>
           </li>
         </ul>
       </div>
@@ -50,30 +50,31 @@
     </section>
 
 <!-- sezione con le info del biglietto scelto in base alle info immesse dal passeggero nella sezione alta -->     <h2>IL TUO BIGLIETTO</h2>
-    <section class="Box_basso">
+    <section id="Box_basso">
 
       <div class="Box_ticket">
         <h4>DETTAGLIO PASSEGGERI</h4>
         </div>
         <div class="Sezione_Ticket">
           <div class="Info_Passenger">
-            NOME PASSEGGERO
+            <h5>NOME PASSEGGERO</h5>
+            <p id="user_name"></p>
           </div>
           <div class="Info_Offer">
-            <h6>Offerta</h6>
-            <p></p>
+            <h5>Offerta</h5>
+            <p id="TicketType"></p>
           </div>
           <div class="Info_Carrozza">
-            <h6>Carrozza</h6>
-            <p class="IdCarrozza"></p>
+            <h5>Carrozza</h5>
+            <p id="IdCarrozza"></p>
           </div>
           <div class="Info_Code">
-            <h6>Codice CP</h6>
-            <p class="IdPrenotation"></p>
+            <h5>Codice CP</h5>
+            <p id="IdPrenotation"></p>
           </div>
           <div class="Info_Ticket">
-            <h6>Costo Biglietto</h6>
-            <p class="TicketPrice"></p>
+            <h5>Costo Biglietto</h5>
+            <p id="TicketPrice"></p>
           </div>
         </div>
 
