@@ -45,11 +45,22 @@ section{
 
 /* IMPOSTAZIONI SPECIFICHE PER LE SINGOLE SEZIONI DEL SITO */
 /* sezione titolo pagina */
+.img_logo{
+  display: flex;
+  justify-content: center;
+}
+.logo_trenitalia{
+  background-color: transparent;
+  width: 180px;
+  height: 77px;
+}
+
+
 h2 {
   text-align: center;
   color: white;
   font-weight: 600;
-  margin: 15px 250px;
+  margin: 15px 50px;
 }
 
 h5{
