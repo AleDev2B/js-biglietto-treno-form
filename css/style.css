@@ -9,7 +9,7 @@
 }
 
 body{
-  background: lightgrey;
+  background: #CA004F;
 }
 
 .Box_alto,.Box_basso{
@@ -43,8 +43,9 @@ h2 {
 
 h6{
   text-align: center;
-  color: red;
+  color: #CA004F;
   font-weight: lighter;
+  margin-bottom: 10px;
 }
 /* sezione box alto passeggero con input da selezionare da parte dell'utente */
 [class*=box_]{
@@ -56,9 +57,12 @@ h6{
 }
 
 [class*=Input]{
+  height: 20px;
   width: 100%;
   background: white;
-  border: 1px solid red;
+  border: 1px solid #CA004F;
+  text-align:center;
+  border-radius: 5px;
 }
 
 .Box_Passenger{
@@ -86,9 +90,10 @@ ul.ButtonsList{
   height: 30px;
   background: lightgrey;
   border: 1px solid red;
-  color: red;
+  color: #CA004F;
   border-radius: 5px;
   margin: 10px;
+  font-weight: bold;
 }
 /* sezione biglietto passeggero */
 
