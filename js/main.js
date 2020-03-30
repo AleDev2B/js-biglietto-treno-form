@@ -4,6 +4,10 @@ var UserName, KmUser, Eta, ButtonGen, ButtonNull;
 // quando l'utente clicca su genera memorizza il valore in una variabile
 var ButtonGen = document.getElementById("buttongen");
 
+var ShowBox = document.getElementById("Box_basso");
+ShowBox.classList.add("hidden");
+ShowBox.classList.remove("show");
+
 // aggiungi la funzione di ascolto al click del bottone ed associa i valori presi dalle variabili associate agli input dei diversi campi (nome, Km della destinazione & sconti in base all'età)
 ButtonGen.addEventListener("click", function(){
 
