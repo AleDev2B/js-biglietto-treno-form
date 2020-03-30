@@ -131,3 +131,7 @@ h4{
 .Info_Passenger{
   background: lightgrey;
 }
+
+p{
+  text-align: center;
+}
